@@ -1,0 +1,36 @@
+@font-face{
+    font-family: 'MiFuente';
+    src: url('/fonts/GulfsDisplay-Condensed.ttf') format('truetype');
+}
+@media (max-width: 768px){
+    /* .contenedor{
+        /* background-color: pink;
+        padding-bottom: 200px;
+        width: auto;
+        height: 30px; */
+     
+    .menuprincipal{
+        font-family: 'MiFuente', sans-serif;
+        font-size: 40px;
+        color: blue;
+        align-content: center;
+        text-align: center;
+        background-color: pink;
+        width: auto;
+        height: 600px;
+    }
+    .imagen1>img{
+        width: 300px;
+        height: 500px;
+        border-radius: 50%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        display: block;
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        z-index: 10;
+    }
+
+}
