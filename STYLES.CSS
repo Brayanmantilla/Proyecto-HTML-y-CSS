@@ -3,6 +3,10 @@
     font-family: 'MiFuente';
     src: url('/fonts/GulfsDisplay-Condensed.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'MiFuente2';
+    src: url('fonts/Anton-Regular.ttf') format('truetype');
+}
 @media (max-width: 768px){
     /* CONFIGURACION GLOBAL DE LA PAGINA */
     *{
@@ -137,7 +141,7 @@
     .nosotros{
         background-color: rgb(250, 250, 113);
         width: 100%;
-        height: 800px;
+        height: auto;
         position: relative;
     }
     /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
@@ -171,5 +175,95 @@
         left:22%;
         top: 118%;
         z-index: 2;
+    }
+    #imagen9{
+        position: absolute;
+        width: 30px;
+        left: 2%;
+        top: 20%;
+    }
+    #imagen10{
+        position: absolute;
+        width: 30px;
+        left: 92%;
+        top: 20%;
+    }
+    .contenedorimagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* 100% del alto de la ventana */
+        padding-top: 159px;
+        text-align: left;
+    }
+    .contenedorimagen img {
+        width: 200px;
+    }
+    .textomatrimonio{
+        width: 230px;
+        margin-top: 20px;
+        font-family: 'Mifuente2', sans-serif;
+        font-size: 13px;
+    }
+
+    .textoimagen{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 0px;
+    }
+    .textomatrimonio2{
+        width: auto;
+        margin-top: 20px;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Mifuente';
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    #imagen12{
+        width: 50px;
+        top:50px;
+    }
+    #imagen13{
+        width: 50px;
+    }
+    .fotoamigos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #imagen14{
+        width: 230px;
+        height: 300px;
+        border-width: 7px;
+        border-color: white;
+        border-style:solid;
+        transform: rotate(-5deg);
+        z-index: 3;
+    }
+    .cuadro1{
+        width: 230px;
+        height: 300px;
+        background-color: pink;
+        border-width: 1px;
+        border-color: black;
+        border-style:solid;
+        transform: rotate(-5deg)  translate(-10px, 10px);
+        position: absolute;
+        z-index: 2;
+    }
+    .cuadro2{
+        width: 230px;
+        height: 300px;
+        background-color: pink;
+        border-width: 1px;
+        border-color: black;
+        border-style:solid;
+        transform: rotate(-5deg)  translate(-20px, 20px);
+        position: absolute;
+        z-index: 1;
     }
 }
