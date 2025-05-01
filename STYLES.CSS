@@ -1,14 +1,16 @@
+/* CONFIGURACION DE LAS FUENTES DE LA PAGINA WEB */
 @font-face{
     font-family: 'MiFuente';
     src: url('/fonts/GulfsDisplay-Condensed.ttf') format('truetype');
 }
 @media (max-width: 768px){
+    /* CONFIGURACION GLOBAL DE LA PAGINA */
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-     
+    /* TITULO DE LA PAGINA DE INICIO */
     .menuprincipal> .titulo1{
         font-family: 'MiFuente', sans-serif;
         font-size: 40px;
@@ -21,6 +23,7 @@
         z-index: 2;
         text-shadow: 0 0 40px rgba(22, 21, 21, 0.467);
     }
+    /* BACKGROUND DE LA PAGINA DE INICIO PERO SOLO LA PARTE ROSADA */
     .menuprincipal{
         background-color: pink;
         width: 100%;
@@ -28,6 +31,7 @@
         border-bottom: 2px solid black;
         position: relative;
     } 
+    /* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
     .imagen1>#imagen1{
         width: 80vw;
         max-width: 300px;
@@ -43,39 +47,129 @@
         transform: translate(-50%, 20%);
         z-index: 1;
     }
-
+    /* MENU TIPO HAMBURGUESA */
+    #menu{
+        display: none;
+    }
+    .menuboton{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: pink;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-shadow: 3px 3px 0 #000;
+        cursor: pointer;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuboton>.raya1
+    {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: black;
+        transition: 0.3s ease;
+    }
+    .menuboton>.raya2
+    {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: 15px;
+        background: black;
+        transition: 0.3s ease;
+    }
+    .menuboton>.raya3
+    {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: 28px;
+        background: black;
+        transition: 0.3s ease;
+    }
+    #menu:checked + .menuboton .raya1 {
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    #menu:checked + .menuboton .raya2 {
+        opacity: 0;
+    }
+    #menu:checked + .menuboton .raya3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .opcionesmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffb6c1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 30px;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        z-index: 2;
+    }
+    #menu:checked ~ .opcionesmenu {
+        transform: translateX(0);
+    }
+    .opcionesmenu a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    .opcionesmenu a span {
+        font-size: 26px;
+        margin-right: 10px;
+    } 
+    /* INICIO DE LA SEGUNDA SESION SE PONE EL COLOR */
     .nosotros{
         background-color: rgb(250, 250, 113);
         width: 100%;
         height: 800px;
         position: relative;
     }
-
+    /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
     #imagen2{
-        position: relative;
+        position: absolute;
         width: 40px;
         left: 3%;
         top: 75%;
     }
-
     #imagen3{
-        position: fixed;
+        position: absolute;
         width: 20px;
         left: 10%;
         top: 50%; 
     }
-
     #imagen4{
-        position: fixed;
+        position: absolute;
         width: 20px;
         left: 87%;
         top: 85%; 
     }
-
     #imagen5{
-        position: fixed;
+        position: absolute;
         width: 60px;
         left: 80%;
         top: 72%; 
+    }
+    #imagen8{
+        position: absolute;
+        width: 90px;
+        left:22%;
+        top: 118%;
+        z-index: 2;
     }
 }
