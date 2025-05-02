@@ -75,7 +75,8 @@
     {
         position: absolute;
         width: 20px;
-        height: 2px;
+        height: 3px;
+        top: 21.5px;
         background: black;
         transition: 0.3s ease;
     }
@@ -173,9 +174,9 @@
     #imagen8{
         position: absolute;
         width: 90px;
-        left:22%;
+        left:25%;
         top: 118%;
-        z-index: 2;
+        z-index: 1;
     }
     #imagen9{
         position: absolute;
@@ -195,16 +196,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* 100% del alto de la ventana */
+        height: auto; /* 100% del alto de la ventana */
         padding-top: 159px;
         text-align: left;
     }
     .contenedorimagen img {
         width: 200px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     /* TEXTO DE LA SECCIÓN NOSOTROS */
     .textomatrimonio{
         width: 230px;
+        height: auto;
         margin-top: 20px;
         font-family: 'Mifuente2', sans-serif;
         font-size: 13px;
@@ -279,6 +283,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
+        padding: 30px;
     }
     /* CONFIGURACIÓN DE LAS IMAGENES */
     .galeria>img{
@@ -555,13 +560,17 @@
         font-size: 30px;
         color: rgb(241, 54, 41);
         padding: 10px 0px 0px 30px;
-        line-height: 0.9;  
+        line-height: 0.9; 
     }
     .fecha{
-        padding-top: 40px;
+        background-color: #ffc0cb;
+        padding: 20px;
+        border-radius: 10px;
         display: flex;
-        flex-direction: row;
-        margin-right: 200px;
+        align-items:center;
+        justify-content: space-between; 
+        gap: 10px;
+        
     }
     .raya{
         width: auto;
@@ -572,12 +581,103 @@
         margin-right: 30px;
     }
     .circulorosado{
-        width:35px;
-        height:35px;
+        width:55px;
+        height:55px;
         background-color: rgb(241, 54, 41);
         border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    #imagen43{
-        top:50%;
+    .cajafinal{
+        width: 100%;
+        height: auto;
+    }
+    .primeracajafinal{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-left: 10%;
+        padding: 30px;
+        background-color: white;
+        box-shadow: -5px 0px 0px black;
+    }
+    .primeracajafinal>p{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .segundacajafinal{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        border: 1px solid black;
+        margin-left: 10%;
+        background-color: white;
+        box-shadow: -5px 5px 0px black;
+    }
+    .telegram{
+        width:55px;
+        height:55px;
+        background-color: #ffeb3b;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+    }
+    .telegram>#imagen44{
+        width: 30px;
+        height: 30px;
+    }
+    .instagram{
+        width:55px;
+        height:55px;
+        background-color: pink;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+    }
+    .instagram>#imagen45{
+        width: 30px;
+        height: 30px;
+    }
+    .facebook{
+        width:55px;
+        height:55px;
+        background-color: #a4f7f7;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .facebook>#imagen46{
+        width: 30px;
+        height: 30px;
+    }
+    .segundacajafinal>p{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 10px 0 10px 30px;
+        
+    }
+    .segundacajafinal>div{
+        border-left: 1px solid black;
     }
 }
