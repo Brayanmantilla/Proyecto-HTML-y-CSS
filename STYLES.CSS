@@ -143,6 +143,7 @@
         width: 100%;
         height: auto;
         position: relative;
+        padding-bottom: 50px;
     }
     /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
     #imagen2{
@@ -188,6 +189,7 @@
         left: 92%;
         top: 20%;
     }
+    /* IMAGEN PRINCIPAL DE LA SECCIÓN NOSOTROS */
     .contenedorimagen {
         display: flex;
         flex-direction: column;
@@ -200,13 +202,14 @@
     .contenedorimagen img {
         width: 200px;
     }
+    /* TEXTO DE LA SECCIÓN NOSOTROS */
     .textomatrimonio{
         width: 230px;
         margin-top: 20px;
         font-family: 'Mifuente2', sans-serif;
         font-size: 13px;
     }
-
+    /* CONFIGURACIÓN DE EL TEXTO JUNTO CON LAS DOS IMAGENES */
     .textoimagen{
         display: flex;
         align-items: center;
@@ -229,6 +232,7 @@
     #imagen13{
         width: 50px;
     }
+    /* CONFIGURACIÓN Y UBICACIÓN DE LA FOTO DE AMIGOS DE LA SECCIÓN NOSOTROS */
     .fotoamigos{
         display: flex;
         align-items: center;
@@ -265,5 +269,241 @@
         transform: rotate(-5deg)  translate(-20px, 20px);
         position: absolute;
         z-index: 1;
+    }
+    /* SECCIÓN GALERÍA */
+    /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
+    .galeria{
+        background: linear-gradient(to top, #ec4d4d,#ffffff);
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    /* CONFIGURACIÓN DE LAS IMAGENES */
+    .galeria>img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        border-color: black;
+        border: 2px;
+        border-style: solid;
+    }
+    /* SECCION DE PRECIOS */
+    .precios{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        background-color: pink;
+        border: 1px;
+        border-color: black;
+        border-style: solid;
+    }
+    .textoprecio{
+        font-family: 'Mifuente';
+        font-size: 45px;
+        color: rgb(221, 62, 62);
+        padding: 30px 60px 30px;
+        letter-spacing: 3px;
+        line-height: 0.8;
+    }
+    .horas{
+        padding: 30px 60px 30px;
+        color: rgb(50, 80, 212);
+        border-top:1px solid black;
+
+    }
+    .textoprecio2{
+        font-family: 'Mifuente';
+        font-size: 25px;
+    }
+    .horas>.barra{
+        width: auto;
+        height: 20px;
+        background-color: yellow;
+        margin-top:20px;
+        border-radius: 30%;
+    }
+    .horas>#imagen24{
+        width: 50px;
+        position: absolute;
+        transform: translate(4px,-33px);
+    }
+    .precios2{
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        border: 1px solid black;
+        gap: 0px;
+        position: relative;
+    }
+    .precios2 p {
+        font-family: 'Mifuente';
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .primercuadrante{
+        color: red;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: rgb(250, 250, 113);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .segundocuadrante{
+        color: blue;
+        border-bottom: 1px solid black;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tercercuadrante{
+        color: white;
+        border-right: 1px solid black;
+        background-color: rgb(51, 51, 231);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .cuartocuadrante{
+        color: blue;
+        background-color: rgb(250, 250, 113);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #imagen25{
+        width: 100px;
+        margin-top: 30px;
+    }
+    .barra{
+        width: 100px;
+        height: 60px;
+        background-color:#ec4d4d;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 5px 5px 0 #00000099;
+        cursor: pointer;
+    }
+    .selector{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid #ffeb3b;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #imagen26{
+        width: 40px;
+        transform: rotate(-38deg);
+        border: 1px solid black;
+        border-radius:50%;
+    }
+    .barra:hover {
+        background-color:#5d4dec;
+    }
+    .selector:hover {
+        border: 3px solid #ffeb3b;
+        top: 5px;
+        left: 45px;
+    }
+    .barra2{
+        width: 100px;
+        height: 60px;
+        background-color:pink;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 5px 5px 0 #00000099;
+        cursor: pointer;
+    }
+    .selector2{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #imagen262{
+        width: 40px;
+        transform: rotate(-38deg);
+        border: 1px solid black;
+        border-radius:50%;
+    }
+    .barra2:hover {
+        background-color:#5d4dec;
+    }
+    .selector2:hover {
+        border: 3px solid #ec4d4d;
+        top: 5px;
+        left: 45px;
+    }
+    .fotoprincipal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -50%);
+        z-index: 10;
+        width: 60px;
+    }
+    .precios3{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        border: 1px solid black;
+        display: block;
+    }
+    .lugar>p {
+        font-family: 'Mifuente';
+        font-size: 35px;
+        display: inline-block;
+        justify-content: space-between;
+        padding: 10px;
+        color: white;
+    }
+    .lugar{
+        background-color: black;
+    }
+    .precios3> .lugar> #p2{
+        text-align: left;
+    }
+    .total{
+        background-color: #ec4d4d;
+    }
+    #p3,#p4{
+        font-family: 'Mifuente';
+    }
+    #p3{
+        font-size: 25px;
+        color:pink;
+        padding: 20px 0px 0 20px;
+    }
+    #p4{
+        font-size: 55px;
+        color: #ffeb3b;
+        padding: 10px 0px 0 20px;
     }
 }
