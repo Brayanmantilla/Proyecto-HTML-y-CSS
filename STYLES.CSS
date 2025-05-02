@@ -300,6 +300,7 @@
         border-color: black;
         border-style: solid;
     }
+    /* TEXTO DE LA PRIMER Y SEGUNDA FILA  */
     .textoprecio{
         font-family: 'Mifuente';
         font-size: 45px;
@@ -312,12 +313,10 @@
         padding: 30px 60px 30px;
         color: rgb(50, 80, 212);
         border-top:1px solid black;
-
-    }
-    .textoprecio2{
         font-family: 'Mifuente';
         font-size: 25px;
     }
+    /* SE HIZO LA BARRA DESLIZANTE DE LA SECCIÓN */
     .horas>.barra{
         width: auto;
         height: 20px;
@@ -325,11 +324,13 @@
         margin-top:20px;
         border-radius: 30%;
     }
+    /* SE UBICA LA IMAGEN CIRCULAR SOBRE LA BARRA */
     .horas>#imagen24{
         width: 50px;
         position: absolute;
         transform: translate(4px,-33px);
     }
+    /* SE REALIZA LA SEGUNDA PARTE DE LA SECCIÓN PRECIOS CON LA CUADRICULA QUE APARECE  */
     .precios2{
         width: 100%;
         height: 800px;
@@ -340,6 +341,7 @@
         gap: 0px;
         position: relative;
     }
+    /* CONFIGURACION DE LOS TEXTOS DE CADA CUADRICULA */
     .precios2 p {
         font-family: 'Mifuente';
         font-size: 25px;
@@ -347,6 +349,7 @@
         margin-left: 5px;
         text-align: center;
     }
+    /* SUBDIVISIÓN EN CUADRANTES PARA UBICAR TODOS LOS ELEMENTOS */
     .primercuadrante{
         color: red;
         border-right: 1px solid black;
@@ -384,6 +387,7 @@
         align-items: center;
         flex-direction: column;
     }
+    /* UBICACIÓN Y CREACIÓN DE LOS DIFERENTES ELEMENTOS DE LAS CUADRICULAS  */
     #imagen25{
         width: 100px;
         margin-top: 30px;
@@ -416,6 +420,7 @@
         border: 1px solid black;
         border-radius:50%;
     }
+    /* IMPLEMENTACIÓN DE ANIMACIONES EN LOS ELEMENTOS CREADOS */
     .barra:hover {
         background-color:#5d4dec;
     }
@@ -460,36 +465,43 @@
         top: 5px;
         left: 45px;
     }
+    /* UBICACIÓN DE LA FOTO DE LA MITAD "LOS ANILLOS" */
     .fotoprincipal{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-90%, -50%);
-        z-index: 10;
+        z-index: 2;
         width: 60px;
     }
+    /* SE REALIZA LA SEGUNDA PARTE DE LA SECCIÓN PRECIOS CON LA CUADRICULA QUE APARECE */
+    /* CONFIGURACIÓN DE LA VISTA DE LA SECCIÓN */
     .precios3{
         width: 100%;
         height: auto;
-        display: grid;
-        grid-template-rows: repeat(2,1fr);
         border: 1px solid black;
         display: block;
+        position:relative;
     }
+    /* CONFIGURACIÓN DE LAS FUENTES  */
     .lugar>p {
         font-family: 'Mifuente';
-        font-size: 35px;
-        display: inline-block;
-        justify-content: space-between;
+        font-size: 28px;
         padding: 10px;
         color: white;
     }
     .lugar{
         background-color: black;
     }
-    .precios3> .lugar> #p2{
-        text-align: left;
+    /* CONFIGURACIÓN PARA LOGRAR QUE LOS TEXTOS QUEDEN EN UNA MISMA LÍNEA SIN SALTAR */
+    .textosprecios{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap:10px;
+        width: auto;
     }
+    /* PARTE FINAL DE LA SECCIÓN PRECIOS */
     .total{
         background-color: #ec4d4d;
     }
@@ -505,5 +517,67 @@
         font-size: 55px;
         color: #ffeb3b;
         padding: 10px 0px 0 20px;
+    }
+    #imagen28 {
+        padding-bottom:50px;
+    }
+    .camara, #imagen29{
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        z-index: 2;
+    }
+    #imagen29{
+        width: 150px;
+        position: absolute;
+    }
+    /* SECCIÓN DE CONTACTOS */
+    .contacto{
+        width: 100%;
+        min-height: 100vh;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+    }
+    #p11{
+        font-family: 'Mifuente';
+        font-size: 50px;
+        color: blue;
+        padding: 10px 0px 0px 30px;
+        line-height: 0.9;
+    }
+    #p21{
+        font-size: 20px;
+        padding: 10px 0px 0px 30px;
+    }
+    #p31{
+        font-family: 'Mifuente';
+        font-size: 30px;
+        color: rgb(241, 54, 41);
+        padding: 10px 0px 0px 30px;
+        line-height: 0.9;  
+    }
+    .fecha{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-right: 200px;
+    }
+    .raya{
+        width: auto;
+        height: 10px;
+        margin-top:20px;
+        background-color:rgb(241, 54, 41);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .circulorosado{
+        width:35px;
+        height:35px;
+        background-color: rgb(241, 54, 41);
+        border-radius: 50%;
+    }
+    #imagen43{
+        top:50%;
     }
 }
