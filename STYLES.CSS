@@ -19,6 +19,43 @@
         box-sizing: border-box;
     }
 
+    /* BOTON DE "CHAT" FIJO */
+    .chat-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        margin-right: 20px;
+    }
+    
+    .chat-button .btn {
+        width: 120px;
+        height: 120px;
+        background: rgb(248, 248, 77);
+        color: black;
+        border-radius: 50%;
+        padding: 12px 24px;
+        font-weight: bold;
+        font-size: 26px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border: 2px solid rgb(197, 197, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    /* Efecto hover */
+    .chat-button:hover {
+        transform: translateY(-5px);
+    }
+    
+    .chat-button .btn:hover {
+        background: rgb(235, 154, 50);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
     /* TITULO DE LA PAGINA DE INICIO */
     .menuprincipal>.titulo1 {
         font-family: 'MiFuente', sans-serif;
@@ -918,6 +955,44 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    /* BOTON DE "CHAT" FIJO */
+    .chat-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        margin-right: 20px;
+    }
+    
+    .chat-button .btn {
+        width: 120px;
+        height: 120px;
+        background: rgb(248, 248, 77);
+        color: black;
+        border-radius: 50%;
+        padding: 12px 24px;
+        font-weight: bold;
+        font-size: 26px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border: 2px solid rgb(197, 197, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    /* Efecto hover */
+    .chat-button:hover {
+        transform: translateY(-5px);
+    }
+    
+    .chat-button .btn:hover {
+        background: rgb(235, 154, 50);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     }
 
     .menuprincipal>.titulo1 {
