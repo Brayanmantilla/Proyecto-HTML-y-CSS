@@ -1,21 +1,25 @@
 /* CONFIGURACION DE LAS FUENTES DE LA PAGINA WEB */
-@font-face{
+@font-face {
     font-family: 'MiFuente';
     src: url('/fonts/GulfsDisplay-Condensed.ttf') format('truetype');
 }
-@font-face{
+
+@font-face {
     font-family: 'MiFuente2';
     src: url('fonts/Anton-Regular.ttf') format('truetype');
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
+
     /* CONFIGURACION GLOBAL DE LA PAGINA */
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
     /* TITULO DE LA PAGINA DE INICIO */
-    .menuprincipal> .titulo1{
+    .menuprincipal>.titulo1 {
         font-family: 'MiFuente', sans-serif;
         font-size: 40px;
         width: 100%;
@@ -27,16 +31,18 @@
         z-index: 2;
         text-shadow: 0 0 40px rgba(22, 21, 21, 0.467);
     }
+
     /* BACKGROUND DE LA PAGINA DE INICIO PERO SOLO LA PARTE ROSADA */
-    .menuprincipal{
+    .menuprincipal {
         background-color: #ffb2d1;
         width: 100%;
         height: 600px;
         border-bottom: 2px solid black;
         position: relative;
-    } 
+    }
+
     /* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
-    #imagen1{
+    #imagen1 {
         width: 80vw;
         max-width: 300px;
         height: auto;
@@ -46,16 +52,18 @@
         border-color: black;
         display: block;
         position: absolute;
-        top: 50%;  
+        top: 50%;
         left: 50%;
         transform: translate(-50%, 20%);
         z-index: 1;
     }
+
     /* MENU TIPO HAMBURGUESA */
-    #menu{
+    #menu {
         display: none;
     }
-    .menuboton{
+
+    .menuboton {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -71,8 +79,8 @@
         align-items: center;
         justify-content: center;
     }
-    .menuboton>.raya1
-    {
+
+    .menuboton>.raya1 {
         position: absolute;
         width: 20px;
         height: 2px;
@@ -80,8 +88,8 @@
         background: black;
         transition: 0.3s ease;
     }
-    .menuboton>.raya2
-    {
+
+    .menuboton>.raya2 {
         position: absolute;
         width: 20px;
         height: 2px;
@@ -89,8 +97,8 @@
         background: black;
         transition: 0.3s ease;
     }
-    .menuboton>.raya3
-    {
+
+    .menuboton>.raya3 {
         position: absolute;
         width: 20px;
         height: 2px;
@@ -98,15 +106,19 @@
         background: black;
         transition: 0.3s ease;
     }
-    #menu:checked + .menuboton .raya1 {
+
+    #menu:checked+.menuboton .raya1 {
         transform: rotate(45deg) translate(-1px, -1px);
     }
-    #menu:checked + .menuboton .raya2 {
+
+    #menu:checked+.menuboton .raya2 {
         opacity: 0;
     }
-    #menu:checked + .menuboton .raya3 {
+
+    #menu:checked+.menuboton .raya3 {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+
     .opcionesmenu {
         position: absolute;
         top: 0;
@@ -122,9 +134,11 @@
         transition: transform 0.4s ease;
         z-index: 2;
     }
-    #menu:checked ~ .opcionesmenu {
+
+    #menu:checked~.opcionesmenu {
         transform: translateX(0);
     }
+
     .opcionesmenu a {
         text-decoration: none;
         color: black;
@@ -134,111 +148,132 @@
         align-items: center;
         font-weight: bold;
     }
+
     .opcionesmenu a span {
         font-size: 26px;
         margin-right: 10px;
-    } 
+    }
+
     /* INICIO DE LA SEGUNDA SESION SE PONE EL COLOR */
-    .nosotros{
+    .nosotros {
         background-color: rgb(250, 250, 113);
         width: 100%;
         height: auto;
         position: relative;
         padding-bottom: 50px;
     }
+
     /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
-    #imagen2{
+    #imagen2 {
         position: absolute;
         width: 40px;
         left: 3%;
         top: 75%;
     }
-    #imagen3{
+
+    #imagen3 {
         position: absolute;
         width: 20px;
         left: 10%;
-        top: 50%; 
+        top: 50%;
     }
-    #imagen4{
+
+    #imagen4 {
         position: absolute;
         width: 20px;
         left: 87%;
-        top: 85%; 
+        top: 85%;
     }
-    #imagen5{
+
+    #imagen5 {
         position: absolute;
         width: 60px;
         left: 80%;
-        top: 72%; 
+        top: 72%;
     }
-    #imagen8{
+
+    #imagen8 {
         position: absolute;
         width: 90px;
-        left:25%;
+        left: 25%;
         top: 118%;
         z-index: 1;
     }
-    #imagen9{
+
+    #imagen9 {
         position: absolute;
         width: 30px;
         left: 2%;
         top: 20%;
     }
-    #imagen10{
+
+    #imagen10 {
         position: absolute;
         width: 30px;
         left: 92%;
         top: 20%;
     }
-    #imagen50{
+
+    #imagen50 {
         display: none;
     }
-    #imagen51{
+
+    #imagen51 {
         display: none;
     }
-    #imagen52{
+
+    #imagen52 {
         display: none;
     }
-    #imagen53{
+
+    #imagen53 {
         display: none;
     }
-    #imagen54{
+
+    #imagen54 {
         display: none;
     }
-    .imagen55{
+
+    .imagen55 {
         display: none;
     }
+
     /* IMAGEN PRINCIPAL DE LA SECCIÓN NOSOTROS */
     .contenedorimagen {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto; /* 100% del alto de la ventana */
+        height: auto;
+        /* 100% del alto de la ventana */
         padding-top: 159px;
         text-align: left;
     }
+
     .contenedorimagen img {
         width: 200px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
+
     /* TEXTO DE LA SECCIÓN NOSOTROS */
-    .textomatrimonio{
+    .textomatrimonio {
         width: 230px;
         height: auto;
         margin-top: 20px;
         font-family: 'Mifuente2', sans-serif;
         font-size: 13px;
     }
+
     /* CONFIGURACIÓN DE EL TEXTO JUNTO CON LAS DOS IMAGENES */
-    .textoimagen{
+    .textoimagen {
         display: flex;
         align-items: center;
         justify-content: left;
         margin-top: 0px;
     }
-    .textomatrimonio2{
+
+    .textomatrimonio2 {
         width: auto;
         margin-top: 20px;
         text-align: left;
@@ -247,64 +282,72 @@
         letter-spacing: 1px;
         margin: 0;
     }
-    #imagen12{
+
+    #imagen12 {
         width: 50px;
-        top:50px;
+        top: 50px;
     }
-    #imagen13{
+
+    #imagen13 {
         width: 50px;
     }
+
     /* CONFIGURACIÓN Y UBICACIÓN DE LA FOTO DE AMIGOS DE LA SECCIÓN NOSOTROS */
-    .fotoamigos{
+    .fotoamigos {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 0px;
     }
-    #imagen14{
+
+    #imagen14 {
         width: 230px;
         height: 300px;
         border-width: 7px;
         border-color: white;
-        border-style:solid;
+        border-style: solid;
         transform: rotate(-5deg);
         z-index: 3;
     }
-    .cuadro1{
+
+    .cuadro1 {
         width: 230px;
         height: 300px;
         background-color: #ffb2d1;
         border-width: 1px;
         border-color: black;
-        border-style:solid;
-        transform: rotate(-5deg)  translate(-10px, 10px);
+        border-style: solid;
+        transform: rotate(-5deg) translate(-10px, 10px);
         position: absolute;
         z-index: 2;
     }
-    .cuadro2{
+
+    .cuadro2 {
         width: 230px;
         height: 300px;
         background-color: #ffb2d1;
         border-width: 1px;
         border-color: black;
-        border-style:solid;
-        transform: rotate(-5deg)  translate(-20px, 20px);
+        border-style: solid;
+        transform: rotate(-5deg) translate(-20px, 20px);
         position: absolute;
         z-index: 1;
     }
+
     /* SECCIÓN GALERÍA */
     /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
-    .galeria{
-        background: linear-gradient(to top, #ec4d4d,#ffffff);
+    .galeria {
+        background: linear-gradient(to top, #ec4d4d, #ffffff);
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         padding: 30px;
     }
+
     /* CONFIGURACIÓN DE LAS IMAGENES */
-    .galeria>img{
+    .galeria>img {
         width: 150px;
         height: 150px;
         border-radius: 10%;
@@ -312,19 +355,21 @@
         border: 2px;
         border-style: solid;
     }
+
     /* SECCION DE PRECIOS */
-    .precios1{
+    .precios1 {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
         background-color: #ffb2d1;
         border: 1px;
         border-color: black;
         border-style: solid;
     }
+
     /* TEXTO DE LA PRIMER Y SEGUNDA FILA  */
-    .textoprecio{
+    .textoprecio {
         font-family: 'Mifuente';
         font-size: 45px;
         color: rgb(221, 62, 62);
@@ -332,38 +377,43 @@
         letter-spacing: 3px;
         line-height: 0.8;
     }
-    .horas{
+
+    .horas {
         padding: 30px 60px 30px;
         color: rgb(50, 80, 212);
-        border-top:1px solid black;
+        border-top: 1px solid black;
         font-family: 'Mifuente';
         font-size: 25px;
     }
+
     /* SE HIZO LA BARRA DESLIZANTE DE LA SECCIÓN */
-    .horas>.barra{
+    .horas>.barra {
         width: auto;
         height: 20px;
         background-color: yellow;
-        margin-top:20px;
+        margin-top: 20px;
         border-radius: 30%;
     }
+
     /* SE UBICA LA IMAGEN CIRCULAR SOBRE LA BARRA */
-    .horas>#imagen24{
+    .horas>#imagen24 {
         width: 50px;
         position: absolute;
-        transform: translate(4px,-33px);
+        transform: translate(4px, -33px);
     }
+
     /* SE REALIZA LA SEGUNDA PARTE DE LA SECCIÓN PRECIOS CON LA CUADRICULA QUE APARECE  */
-    .precios2{
+    .precios2 {
         width: 100%;
         height: 800px;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         border: 1px solid black;
         gap: 0px;
         position: relative;
     }
+
     /* CONFIGURACION DE LOS TEXTOS DE CADA CUADRICULA */
     .precios2 p {
         font-family: 'Mifuente';
@@ -372,8 +422,9 @@
         margin-left: 5px;
         text-align: center;
     }
+
     /* SUBDIVISIÓN EN CUADRANTES PARA UBICAR TODOS LOS ELEMENTOS */
-    .primercuadrante{
+    .primercuadrante {
         color: red;
         border-right: 1px solid black;
         border-bottom: 1px solid black;
@@ -382,9 +433,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
-    .segundocuadrante{
+
+    .segundocuadrante {
         color: blue;
         border-bottom: 1px solid black;
         background-color: white;
@@ -392,9 +444,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
-    .tercercuadrante{
+
+    .tercercuadrante {
         color: white;
         border-right: 1px solid black;
         background-color: rgb(51, 51, 231);
@@ -404,11 +457,13 @@
         flex-direction: column;
         margin-top: 0px;
     }
+
     .tercercuadrante>#imagen25:hover {
         transform: rotate(360deg);
         transition: transform 0.5s;
     }
-    .cuartocuadrante{
+
+    .cuartocuadrante {
         width: 100%;
         height: auto;
         display: flex;
@@ -417,11 +472,13 @@
         justify-content: center;
         background-color: yellow;
     }
-    .cuartocuadrante> p{
+
+    .cuartocuadrante>p {
         color: #0056ff;
         font-size: 24px;
         letter-spacing: 1px;
     }
+
     .fotoscuadrante {
         margin: 20px auto;
         background: white;
@@ -433,10 +490,12 @@
         width: 180px;
         padding: 10px 20px;
     }
+
     .fotoscuadrante img {
         width: 30px;
         height: 30px;
     }
+
     .contador {
         background-color: #f4a9b8;
         width: 40px;
@@ -449,27 +508,31 @@
         font-size: 18px;
         color: #000;
     }
+
     .subtitulo {
         font-family: 'Mifuente';
         color: #0056ff;
         font-size: 25px;
         margin-top: 10px;
     }
+
     /* UBICACIÓN Y CREACIÓN DE LOS DIFERENTES ELEMENTOS DE LAS CUADRICULAS  */
-    #imagen25{
+    #imagen25 {
         width: 100px;
         margin-top: 30px;
     }
-    .barra{
+
+    .barra {
         width: 100px;
         height: 60px;
-        background-color:#ec4d4d;
+        background-color: #ec4d4d;
         border-radius: 50%;
         position: relative;
         box-shadow: 5px 5px 0 #00000099;
         cursor: pointer;
     }
-    .selector{
+
+    .selector {
         width: 50px;
         height: 50px;
         background-color: white;
@@ -482,31 +545,36 @@
         justify-content: center;
         align-items: center;
     }
-    #imagen26{
+
+    #imagen26 {
         width: 40px;
         transform: rotate(-38deg);
         border: 1px solid black;
-        border-radius:50%;
+        border-radius: 50%;
     }
+
     /* IMPLEMENTACIÓN DE ANIMACIONES EN LOS ELEMENTOS CREADOS */
     .barra:hover {
-        background-color:#5d4dec;
+        background-color: #5d4dec;
     }
+
     .selector:hover {
         border: 3px solid #ffeb3b;
         top: 5px;
         left: 45px;
     }
-    .barra2{
+
+    .barra2 {
         width: 100px;
         height: 60px;
-        background-color:#ffb2d1;
+        background-color: #ffb2d1;
         border-radius: 50%;
         position: relative;
         box-shadow: 5px 5px 0 #00000099;
         cursor: pointer;
     }
-    .selector2{
+
+    .selector2 {
         width: 50px;
         height: 50px;
         background-color: white;
@@ -519,22 +587,26 @@
         justify-content: center;
         align-items: center;
     }
-    #imagen262{
+
+    #imagen262 {
         width: 40px;
         transform: rotate(-38deg);
         border: 1px solid black;
-        border-radius:50%;
+        border-radius: 50%;
     }
+
     .barra2:hover {
-        background-color:#5d4dec;
+        background-color: #5d4dec;
     }
+
     .selector2:hover {
         border: 3px solid #ec4d4d;
         top: 5px;
         left: 45px;
     }
+
     /* UBICACIÓN DE LA FOTO DE LA MITAD "LOS ANILLOS" */
-    .fotoprincipal{
+    .fotoprincipal {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -542,19 +614,22 @@
         z-index: 2;
         width: 60px;
     }
+
     .fotoprincipal:hover {
         transform: rotate(270deg);
         transition: transform 0.9s;
     }
+
     /* SE REALIZA LA SEGUNDA PARTE DE LA SECCIÓN PRECIOS CON LA CUADRICULA QUE APARECE */
     /* CONFIGURACIÓN DE LA VISTA DE LA SECCIÓN */
-    .precios3{
+    .precios3 {
         width: 100%;
         height: auto;
         border: 1px solid black;
         display: block;
-        position:relative;
+        position: relative;
     }
+
     /* CONFIGURACIÓN DE LAS FUENTES  */
     .lugar>p {
         font-family: 'Mifuente';
@@ -562,104 +637,124 @@
         padding: 10px;
         color: white;
     }
-    .lugar{
+
+    .lugar {
         background-color: black;
     }
+
     /* CONFIGURACIÓN PARA LOGRAR QUE LOS TEXTOS QUEDEN EN UNA MISMA LÍNEA SIN SALTAR */
-    .textosprecios{
+    .textosprecios {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        gap:10px;
+        gap: 10px;
         width: auto;
     }
+
     /* PARTE FINAL DE LA SECCIÓN PRECIOS */
-    .total{
+    .total {
         background-color: #ec4d4d;
     }
-    #p3,#p4{
+
+    #p3,
+    #p4 {
         font-family: 'Mifuente';
     }
-    #p3{
+
+    #p3 {
         font-size: 25px;
-        color:#ffb2d1;
+        color: #ffb2d1;
         padding: 20px 0px 0 20px;
     }
-    #p4{
+
+    #p4 {
         font-size: 55px;
         color: #ffeb3b;
         padding: 10px 0px 0 20px;
     }
+
     #imagen28 {
-        padding-bottom:50px;
+        padding-bottom: 50px;
     }
-    .camara, #imagen29{
+
+    .camara,
+    #imagen29 {
         position: absolute;
         top: 70%;
         left: 70%;
         z-index: 2;
     }
-    #imagen29{
+
+    #imagen29 {
         width: 150px;
         position: absolute;
     }
+
     /* SECCIÓN DE CONTACTOS */
-    .contacto{
+    .contacto {
         width: 100%;
         min-height: 100vh;
         background-color: #ffb2d1;
         display: flex;
         flex-direction: column;
     }
-    .imagenesmatrimonio{
+
+    .imagenesmatrimonio {
         width: 100%;
         height: auto;
         display: flex;
         text-align: center;
         justify-content: center;
     }
-    #imagen33{
+
+    #imagen33 {
         width: 400px;
         margin: 30px 0px 30px 0px;
     }
-    #p11{
+
+    #p11 {
         font-family: 'Mifuente';
         font-size: 50px;
         color: blue;
         padding: 10px 0px 0px 30px;
         line-height: 0.9;
     }
-    #p21{
+
+    #p21 {
         font-size: 20px;
         padding: 10px 0px 0px 30px;
     }
-    #p31{
+
+    #p31 {
         font-family: 'Mifuente';
         font-size: 30px;
         color: rgb(241, 54, 41);
         padding: 10px 0px 0px 30px;
-        line-height: 0.9; 
+        line-height: 0.9;
     }
-    .fecha{
+
+    .fecha {
         background-color: #ffb2d1;
         padding: 20px;
         border-radius: 10px;
         display: flex;
-        align-items:center;
-        justify-content: space-between; 
+        align-items: center;
+        justify-content: space-between;
         gap: 10px;
     }
-    .raya{
+
+    .raya {
         width: auto;
         height: 10px;
-        margin-top:20px;
-        background-color:rgb(241, 54, 41);
+        margin-top: 20px;
+        background-color: rgb(241, 54, 41);
         margin-left: 30px;
         margin-right: 30px;
     }
-    .circulorosado{
-        width:55px;
-        height:55px;
+
+    .circulorosado {
+        width: 55px;
+        height: 55px;
         background-color: rgb(241, 54, 41);
         border-radius: 50%;
         cursor: pointer;
@@ -667,11 +762,13 @@
         align-items: center;
         justify-content: center;
     }
-    .cajafinal{
+
+    .cajafinal {
         width: 100%;
         height: auto;
     }
-    .primeracajafinal{
+
+    .primeracajafinal {
         width: 80%;
         height: auto;
         display: grid;
@@ -683,12 +780,14 @@
         background-color: white;
         box-shadow: -5px 0px 0px black;
     }
-    .primeracajafinal>p{
+
+    .primeracajafinal>p {
         font-weight: bold;
         font-size: 20px;
         line-height: 1.8;
     }
-    .segundacajafinal{
+
+    .segundacajafinal {
         width: 80%;
         height: auto;
         display: grid;
@@ -698,9 +797,10 @@
         background-color: white;
         box-shadow: -5px 5px 0px black;
     }
-    .telegram{
-        width:55px;
-        height:55px;
+
+    .telegram {
+        width: 55px;
+        height: 55px;
         background-color: #ffeb3b;
         border-radius: 50%;
         cursor: pointer;
@@ -710,13 +810,15 @@
         border: 1px solid black;
         margin: 5px;
     }
-    .telegram>#imagen44{
+
+    .telegram>#imagen44 {
         width: 30px;
         height: 30px;
     }
-    .instagram{
-        width:55px;
-        height:55px;
+
+    .instagram {
+        width: 55px;
+        height: 55px;
         background-color: #ffb2d1;
         border-radius: 50%;
         cursor: pointer;
@@ -726,13 +828,15 @@
         border: 1px solid black;
         margin: 5px;
     }
-    .instagram>#imagen45{
+
+    .instagram>#imagen45 {
         width: 30px;
         height: 30px;
     }
-    .facebook{
-        width:55px;
-        height:55px;
+
+    .facebook {
+        width: 55px;
+        height: 55px;
         background-color: #a4f7f7;
         border-radius: 50%;
         cursor: pointer;
@@ -743,33 +847,39 @@
         margin: 5px;
         cursor: pointer;
     }
-    .facebook>#imagen46{
+
+    .facebook>#imagen46 {
         width: 30px;
         height: 30px;
     }
-    .segundacajafinal>p{
+
+    .segundacajafinal>p {
         font-weight: bold;
         font-size: 20px;
         line-height: 1.8;
         padding: 10px 0 10px 30px;
-        
+
     }
-    .segundacajafinal>div{
+
+    .segundacajafinal>div {
         border-left: 1px solid black;
     }
 }
+
 /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
 
-@media (min-width:768px){
+@media (min-width:768px) {
+
     /* CONFIGURACION GLOBAL DE LA PAGINA */
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .menuprincipal> .titulo1{
+
+    .menuprincipal>.titulo1 {
         font-family: 'MiFuente', sans-serif;
         font-size: 40px;
         width: 100%;
@@ -781,68 +891,78 @@
         z-index: 2;
         text-shadow: 0 0 40px rgba(22, 21, 21, 0.467);
     }
-        /* BACKGROUND DE LA PAGINA DE INICIO PERO SOLO LA PARTE ROSADA */
-    .menuprincipal{
+
+    /* BACKGROUND DE LA PAGINA DE INICIO PERO SOLO LA PARTE ROSADA */
+    .menuprincipal {
         background-color: #ffb2d1;
         width: 100%;
         height: 450px;
         border-bottom: 2px solid black;
         position: relative;
-    } 
-/* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
-    .nosotros{
+    }
+
+    /* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
+    .nosotros {
         background-color: rgb(250, 250, 113);
         width: 100%;
         height: auto;
         position: relative;
         padding-bottom: 50px;
     }
+
     /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
-    #imagen2{
+    #imagen2 {
         position: absolute;
         width: 40px;
         left: 27%;
         top: 75%;
     }
-    #imagen3{
+
+    #imagen3 {
         position: absolute;
         width: 20px;
         left: 23%;
-        top: 45%; 
+        top: 45%;
     }
-    #imagen4{
+
+    #imagen4 {
         position: absolute;
         width: 20px;
         left: 75%;
-        top: 80%; 
+        top: 80%;
     }
-    #imagen5{
+
+    #imagen5 {
         position: absolute;
         width: 60px;
         left: 75%;
-        top: 60%; 
+        top: 60%;
         z-index: 2;
     }
-    #imagen8{
+
+    #imagen8 {
         position: absolute;
         width: 90px;
-        left:80%;
+        left: 80%;
         top: 90%;
         z-index: 1;
     }
-    #imagen9{
+
+    #imagen9 {
         position: absolute;
         width: 30px;
         left: 2%;
         top: 20%;
     }
-    #imagen10{
+
+    #imagen10 {
         position: absolute;
         width: 30px;
-        left: 92%;
+        left: 95%;
         top: 20%;
     }
-    #imagen50{
+
+    #imagen50 {
         position: absolute;
         width: 150px;
         left: 79%;
@@ -850,7 +970,8 @@
         border-radius: 20%;
         border: 1px solid black;
     }
-    #imagen51{
+
+    #imagen51 {
         position: absolute;
         width: 200px;
         left: 3%;
@@ -859,12 +980,14 @@
         border: 1px solid black;
         z-index: 2;
     }
-    .imagen1matrimonio{
+
+    .imagen1matrimonio {
         position: relative;
         width: 100vw;
         height: 100vh;
     }
-    #imagen1{
+
+    #imagen1 {
         width: 80vw;
         max-width: 300px;
         height: auto;
@@ -873,18 +996,20 @@
         border-style: solid;
         border-color: black;
         position: relative;
-        top: 30%;  
+        top: 23%;
         left: 50%;
         transform: translate(-50%, 20%);
         z-index: 1;
     }
-    #imagen52{
+
+    #imagen52 {
         position: absolute;
         width: 70px;
         left: 36.5vw;
         top: 65vh;
         z-index: 10;
     }
+
     /* MENU SUPERIOR CON OPCIONES */
     .opcionesmenu {
         background-color: #ffb2d1;
@@ -895,11 +1020,12 @@
         align-items: center;
         font-weight: bold;
         position: fixed;
-        width: 100vw; /* usa 100% del viewport sin excederse */
+        width: 100vw;
         top: 0;
         z-index: 100;
-        box-sizing: border-box; /* que padding no sume al ancho */
+        box-sizing: border-box;
     }
+
     .opcionesmenu a {
         text-decoration: none;
         color: black;
@@ -908,43 +1034,49 @@
         align-items: center;
         gap: 5px;
     }
+
     /* SECCIÓN NOSOTROS */
-    .amigos2{
+    .amigos2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         grid-template-areas: "imagen texto";
     }
+
     .contenedorimagen {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto; /* 100% del alto de la ventana */
+        height: auto;
         padding-top: 250px;
         grid-area: texto;
     }
+
     .contenedorimagen img {
-        width: 200px;
+        width: 250px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
+
     /* TEXTO DE LA SECCIÓN NOSOTROS */
-    .textomatrimonio{
-        width: 230px;
+    .textomatrimonio {
+        width: 300px;
         height: auto;
         margin-top: 20px;
         font-family: 'Mifuente2', sans-serif;
-        font-size: 13px;
+        font-size: 18px;
     }
+
     /* CONFIGURACIÓN DE EL TEXTO JUNTO CON LAS DOS IMAGENES */
-    .textoimagen{
+    .textoimagen {
         display: flex;
         align-items: center;
         justify-content: left;
         margin-top: 0px;
     }
-    .textomatrimonio2{
+
+    .textomatrimonio2 {
         width: auto;
         margin-top: 20px;
         text-align: left;
@@ -952,16 +1084,20 @@
         font-family: 'Mifuente';
         letter-spacing: 1px;
         margin: 0;
+        font-size: 25px;
     }
-    #imagen12{
+
+    #imagen12 {
         width: 50px;
-        top:50px;
+        top: 50px;
     }
-    #imagen13{
+
+    #imagen13 {
         width: 50px;
     }
+
     /* CONFIGURACIÓN Y UBICACIÓN DE LA FOTO DE AMIGOS DE LA SECCIÓN NOSOTROS */
-    .fotoamigos{
+    .fotoamigos {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -970,63 +1106,70 @@
         margin-left: 80px;
         grid-area: imagen;
     }
-    #imagen14{
-        width: 230px;
-        height: 300px;
+
+    #imagen14 {
+        width: 280px;
+        height: 350px;
         border-width: 7px;
         border-color: white;
-        border-style:solid;
+        border-style: solid;
         transform: rotate(-5deg);
         z-index: 3;
     }
-    .cuadro1{
-        width: 230px;
-        height: 300px;
+
+    .cuadro1 {
+        width: 280px;
+        height: 350px;
         background-color: #ffb2d1;
         border-width: 1px;
         border-color: black;
-        border-style:solid;
-        transform: rotate(-5deg)  translate(-10px, 10px);
+        border-style: solid;
+        transform: rotate(-5deg) translate(-10px, 10px);
         position: absolute;
         z-index: 2;
     }
-    .cuadro2{
-        width: 230px;
-        height: 300px;
+
+    .cuadro2 {
+        width: 280px;
+        height: 350px;
         background-color: #ffb2d1;
         border-width: 1px;
         border-color: black;
-        border-style:solid;
-        transform: rotate(-5deg)  translate(-20px, 20px);
+        border-style: solid;
+        transform: rotate(-5deg) translate(-20px, 20px);
         position: absolute;
         z-index: 1;
     }
-    #imagen53{
+
+    #imagen53 {
         position: absolute;
         width: 30px;
         left: 2%;
         top: 93%;
     }
-    #imagen54{
+
+    #imagen54 {
         position: absolute;
         width: 30px;
-        left: 92%;
+        left: 95%;
         top: 93%;
     }
+
     /* SECCIÓN GALERIA */
     /* SECCIÓN GALERÍA */
     /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
-    .galeria{
-        background: linear-gradient(to top, #ec4d4d,#ffffff);
+    .galeria {
+        background: linear-gradient(to top, #ec4d4d, #ffffff);
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns:  1fr  1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 10px;
         padding: 30px;
     }
+
     /* CONFIGURACIÓN DE LAS IMAGENES */
-    .galeria>img{
+    .galeria>img {
         width: 250px;
         height: auto;
         border-radius: 10%;
@@ -1036,20 +1179,592 @@
     }
 
     @keyframes mover-lados {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(10px); }
-        100% { transform: translateX(0); }
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(20px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
+
     .galeria img {
-        animation: mover-lados 3s ease-in-out infinite;
+        animation: mover-lados 2s ease-in-out infinite;
+    }
+/* /////////////////////////////////////////////////////////////////////// */
+/* SECCIÓN PRECIOS */
+/* ///////////////////////////////////////////////////////////////////// */
+    .precios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        max-width: auto;
+        margin: 20px auto;
+        gap: 2px;
+        background-color: black;
     }
 
+    /* PRIMERA FILA */
+    .precios1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-color: #ffb2d1;
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
 
+    .textoprecio {
+        font-family: 'Mifuente';
+        font-size: 45px;
+        color: rgb(221, 62, 62);
+        padding: 30px 60px 30px;
+        letter-spacing: 3px;
+        line-height: 0.8;
+    }
 
+    .horas {
+        padding: 30px 60px 30px;
+        color: rgb(50, 80, 212);
+        border-top: 1px solid black;
+        font-family: 'Mifuente';
+        font-size: 35px;
+    }
 
+    .horas > .barra {
+        width: auto;
+        height: 20px;
+        background-color: yellow;
+        margin-top: 20px;
+        border-radius: 30px;
+        position: relative;
+    }
 
+    .horas > #imagen24 {
+        width: 50px;
+        position: absolute;
+        transform: translate(4px, -33px);
+    }
 
+    /* SEGUNDA FILA */
+    .precios2 {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: auto;
+        border: 1px solid black;
+        gap: 0px;
+        position: relative;
+    }
 
+    .precios2 p {
+        font-family: 'Mifuente';
+        font-size: 45px;
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: center;
+    }
 
+    /* PRIMER CUADRANTE - SESIÓN DE COMPROMISO */
+    .primercuadrante {
+        color: red;
+        border-right: 1px solid black;
+        background-color: rgb(250, 250, 113);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
 
+    /* SEGUNDO CUADRANTE - VIDEO DE LA CEREMONIA */
+    .segundocuadrante {
+        color: blue;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-right: 1px solid black;
+    }
 
+    /* TERCER CUADRANTE - SOLO DIGITAL */
+    .tercercuadrante {
+        color: white;
+        background-color: rgb(51, 51, 231);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 20px;
+        border-right: 1px solid black;
+    }
+
+    .tercercuadrante > #imagen25:hover {
+        transform: rotate(360deg);
+        transition: transform 0.5s;
+    }
+
+    /* CUARTO CUADRANTE - CABINA DE FOTOS */
+    .cuartocuadrante {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+        padding: 20px;
+    }
+
+    .cuartocuadrante > p {
+        color: #0056ff;
+        font-size: 44px;
+        letter-spacing: 1px;
+    }
+
+    .fotoscuadrante {
+        margin: 20px auto;
+        background: white;
+        border-radius: 50px;
+        box-shadow: 4px 6px 0px #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        padding: 10px 20px;
+    }
+
+    .fotoscuadrante img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contador {
+        background-color: #f4a9b8;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000;
+    }
+
+    .subtitulo {
+        font-family: 'Mifuente';
+        color: #0056ff;
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    /* ELEMENTOS DE TOGGLE/INTERACCIÓN */
+    #imagen25 {
+        width: 100px;
+        margin-top: 30px;
+    }
+
+    .barra {
+        width: 100px;
+        height: 60px;
+        background-color: #ec4d4d;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 5px 5px 0 #00000099;
+        cursor: pointer;
+    }
+
+    .selector {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid #ffeb3b;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagen26 {
+        width: 40px;
+        transform: rotate(-38deg);
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .barra:hover {
+        background-color: #5d4dec;
+    }
+
+    .selector:hover {
+        border: 3px solid #ffeb3b;
+        top: 5px;
+        left: 45px;
+    }
+
+    .barra2 {
+        width: 100px;
+        height: 60px;
+        background-color: #ffb2d1;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 5px 5px 0 #00000099;
+        cursor: pointer;
+    }
+
+    .selector2 {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagen262 {
+        width: 40px;
+        transform: rotate(-38deg);
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .barra2:hover {
+        background-color: #5d4dec;
+    }
+
+    .selector2:hover {
+        border: 3px solid #ec4d4d;
+        top: 5px;
+        left: 45px;
+    }
+
+    /* IMAGEN CENTRAL DE ANILLOS */
+    .fotoprincipal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -50%);
+        z-index: 2;
+        width: 60px;
+    }
+
+    .fotoprincipal:hover {
+        transform: rotate(270deg);
+        transition: transform 0.9s;
+    }
+
+    /* FILA SUPERIOR - PARTE DERECHA CON 3 CUADROS */
+    .precios3 {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 1px solid black;
+        gap: 0px;
+    }
+
+    /* MAPA */
+    .lugar {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid black;
+    }
+
+    .lugar > p {
+        font-family: 'Mifuente';
+        font-size: 28px;
+        padding: 10px;
+        color: white;
+    }
+
+    .textosprecios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #p1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #p2 {
+        font-size: 28px;
+        color: #aaa;
+    }
+
+    #imagen28 {
+        width: 100%;
+        max-height: 200px;
+        margin-top: 10px;
+        padding-bottom: 0;
+    }
+
+    /* TOTAL */
+    .total {
+        background-color: #ec4d4d;
+        border-right: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #p3, #p4 {
+        font-family: 'Mifuente';
+    }
+
+    #p3 {
+        font-size: 45px;
+        color: #ffb2d1;
+        padding: 20px 0px 0 20px;
+    }
+
+    #p4 {
+        font-size: 85px;
+        color: #ffeb3b;
+        padding: 10px 0px 0 20px;
+    }
+
+    /* CÁMARA Y ENVÍO */
+    .camara {
+        background-color: #ffb2d1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+    }
+
+    .camara::after {
+        content: "ENVÍA MI PAQUETE";
+        position: absolute;
+        bottom: 40px;
+        font-family: 'Mifuente';
+        font-weight: bold;
+        color: #333;
+        font-size: 40px;
+    }
+    
+    .camara::before {
+        position: absolute;
+        bottom: 35px;
+        width: 80%;
+        height: 2px;
+        background-color: #333;
+    }
+
+    #imagen29 {
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+/* /////////////////////////////////////////////////////////////////////// */
+/* SECCIÓN PRECIOS */
+/* ///////////////////////////////////////////////////////////////////// */
+/* SECCIÓN DE CONTACTOS */
+.contacto {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffb2d1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagenesmatrimonio {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.segundapartecontacto{
+    width: 100%;
+    padding-top: 20%;
+}
+
+#imagen33 {
+    width: 600px;
+    margin: 30px 0px 30px 0px;
+}
+
+#p11 {
+    font-family: 'Mifuente';
+    font-size: 80px;
+    color: blue;
+    padding: 10px 0px 20px 30px;
+    line-height: 0.9;
+    text-align: center;
+}
+
+#p21 {
+    font-size: 25px;
+    padding: 10px 0px 0px 30px;
+}
+
+#p31 {
+    font-family: 'Mifuente';
+    font-size: 45px;
+    color: rgb(241, 54, 41);
+    padding: 10px 0px 0px 30px;
+    line-height: 0.9;
+}
+
+.fecha {
+    background-color: #ffb2d1;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.raya {
+    width: auto;
+    height: 10px;
+    margin-top: 20px;
+    background-color: rgb(241, 54, 41);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.circulorosado {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(241, 54, 41);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajafinal {
+    width: 100%;
+    height: auto;
+}
+
+.primeracajafinal {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: -5px 0px 0px black;
+}
+
+.primeracajafinal>p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.segundacajafinal {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    border: 1px solid black;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow: -5px 5px 0px black;
+}
+
+.telegram {
+    width: 55px;
+    height: 55px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.telegram>#imagen44 {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram {
+    width: 55px;
+    height: 55px;
+    background-color: #ffb2d1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.instagram>#imagen45 {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook {
+    width: 55px;
+    height: 55px;
+    background-color: #a4f7f7;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.facebook>#imagen46 {
+    width: 30px;
+    height: 30px;
+}
+
+.segundacajafinal>p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 10px 0 10px 30px;
+
+}
+
+.segundacajafinal>div {
+    border-left: 1px solid black;
+}
+
+}
