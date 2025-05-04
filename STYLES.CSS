@@ -9,6 +9,7 @@
     src: url('fonts/Anton-Regular.ttf') format('truetype');
 }
 
+/* PANTALLAS MENORES A 768PX */
 @media (max-width: 768px) {
 
     /* CONFIGURACION GLOBAL DE LA PAGINA */
@@ -80,6 +81,7 @@
         justify-content: center;
     }
 
+    /* RAYAS DEL BOTON DE MENÚ */
     .menuboton>.raya1 {
         position: absolute;
         width: 20px;
@@ -107,6 +109,7 @@
         transition: 0.3s ease;
     }
 
+    /* TRANSICIÓN DE CAMBIO DEL BOTÓN DE MENÚ DE LAS 3 RAYAS A LA X */
     #menu:checked+.menuboton .raya1 {
         transform: rotate(45deg) translate(-1px, -1px);
     }
@@ -119,6 +122,7 @@
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
+    /* UBICACION DE LAS OPCIONES DEL MENÚ */
     .opcionesmenu {
         position: absolute;
         top: 0;
@@ -153,8 +157,10 @@
         font-size: 26px;
         margin-right: 10px;
     }
-
-    /* INICIO DE LA SEGUNDA SESION SE PONE EL COLOR */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* SECCIÓN NOSOTROS */
+    /* INICIO DE LA SEGUNDA SECCIÓN SE PONE EL COLOR */
     .nosotros {
         background-color: rgb(250, 250, 113);
         width: 100%;
@@ -163,7 +169,7 @@
         padding-bottom: 50px;
     }
 
-    /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS */
+    /* CONFIGURACION DE LOS DETALLES DE LAS IMAGENES PEQUEÑAS DE LA PANTALLA PRINCIPAL */
     #imagen2 {
         position: absolute;
         width: 40px;
@@ -214,6 +220,7 @@
         top: 20%;
     }
 
+    /* SE OCULTAN LAS IMAGENES QUE SE PUSIERON EN LA PANTALLA DE >768PX */
     #imagen50 {
         display: none;
     }
@@ -283,6 +290,7 @@
         margin: 0;
     }
 
+    /* CONFIGURACIÓN DE IMAGENES */
     #imagen12 {
         width: 50px;
         top: 50px;
@@ -310,6 +318,7 @@
         z-index: 3;
     }
 
+    /* CREACIÓN Y UBICACIÓN DE LOS CUADROS DE LA FOTO */
     .cuadro1 {
         width: 230px;
         height: 300px;
@@ -333,7 +342,8 @@
         position: absolute;
         z-index: 1;
     }
-
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN GALERÍA */
     /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
     .galeria {
@@ -356,7 +366,28 @@
         border-style: solid;
     }
 
+    /* TRANSICIÓN APLICADA A LAS IMAGENES PARA EL MOVIMIENTO */
+    @keyframes mover-lados {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(20px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .galeria img {
+        animation: mover-lados 2s ease-in-out infinite;
+    }
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCION DE PRECIOS */
+    /* PRIMERA SECCIÓN DE PRECIOS */
     .precios1 {
         width: 100%;
         height: auto;
@@ -402,6 +433,7 @@
         transform: translate(4px, -33px);
     }
 
+    /* SEGUNDA SECCIÓN DE PRECIOS */
     /* SE REALIZA LA SEGUNDA PARTE DE LA SECCIÓN PRECIOS CON LA CUADRICULA QUE APARECE  */
     .precios2 {
         width: 100%;
@@ -458,6 +490,7 @@
         margin-top: 0px;
     }
 
+    /* APLICACIÓN DE TRANSICIONES Y ARREGLO DE LAS IMAGENES */
     .tercercuadrante>#imagen25:hover {
         transform: rotate(360deg);
         transition: transform 0.5s;
@@ -651,7 +684,8 @@
         width: auto;
     }
 
-    /* PARTE FINAL DE LA SECCIÓN PRECIOS */
+    /* PARTE FINAL O TERCERA PARTE DE LA SECCIÓN PRECIOS */
+    /* CONFIGURACIÓN DE DISEÑO EN TEXTO E IMAGENES */
     .total {
         background-color: #ec4d4d;
     }
@@ -689,7 +723,8 @@
         width: 150px;
         position: absolute;
     }
-
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN DE CONTACTOS */
     .contacto {
         width: 100%;
@@ -699,6 +734,7 @@
         flex-direction: column;
     }
 
+    /* CONFIGURACIÓN DE LAS IMAGENES Y EL TEXTO DE LA ULTIMA SECCIÓN */
     .imagenesmatrimonio {
         width: 100%;
         height: auto;
@@ -763,11 +799,13 @@
         justify-content: center;
     }
 
+    /* CONFIGURACIÓN DE LA TABLA FINAL CON LAS REDES SOCIALES CORRESPONDIENTES */
     .cajafinal {
         width: 100%;
         height: auto;
     }
 
+    /* DISEÑO DEL CONTENEDOR */
     .primeracajafinal {
         width: 80%;
         height: auto;
@@ -798,6 +836,7 @@
         box-shadow: -5px 5px 0px black;
     }
 
+    /* CONFIGURACIÓN DE TAMAÑO, DISEÑO, COLOR Y CARACTERISTICAS FINALES */
     .telegram {
         width: 55px;
         height: 55px;
@@ -869,6 +908,8 @@
 /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+
+/* PANTALLAS MENORES A 768PX */
 
 @media (min-width:768px) {
 
@@ -1034,7 +1075,9 @@
         align-items: center;
         gap: 5px;
     }
-
+    
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN NOSOTROS */
     .amigos2 {
         display: grid;
@@ -1087,6 +1130,7 @@
         font-size: 25px;
     }
 
+    /* CONFIGURACIÓN DE TAMAÑO Y POSICIÓN DE LAS IMAGENES */
     #imagen12 {
         width: 50px;
         top: 50px;
@@ -1117,6 +1161,7 @@
         z-index: 3;
     }
 
+    /* CREACIÓN Y EDICIÓN DE LOS CUADROS DEL MARCO DE LA IMAGEN */
     .cuadro1 {
         width: 280px;
         height: 350px;
@@ -1154,8 +1199,8 @@
         left: 95%;
         top: 93%;
     }
-
-    /* SECCIÓN GALERIA */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+    /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN GALERÍA */
     /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
     .galeria {
@@ -1178,6 +1223,7 @@
         border-style: solid;
     }
 
+    /* APLICACION DE TRANSICIONES EN LAS IMAGENES DE LA SECCIÓN */
     @keyframes mover-lados {
         0% {
             transform: translateX(0);
@@ -1195,9 +1241,10 @@
     .galeria img {
         animation: mover-lados 2s ease-in-out infinite;
     }
-/* /////////////////////////////////////////////////////////////////////// */
-/* SECCIÓN PRECIOS */
-/* ///////////////////////////////////////////////////////////////////// */
+
+    /* /////////////////////////////////////////////////////////////////////// */
+    /* SECCIÓN PRECIOS */
+    /* ///////////////////////////////////////////////////////////////////// */
     .precios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1235,7 +1282,7 @@
         font-size: 35px;
     }
 
-    .horas > .barra {
+    .horas>.barra {
         width: auto;
         height: 20px;
         background-color: yellow;
@@ -1244,7 +1291,7 @@
         position: relative;
     }
 
-    .horas > #imagen24 {
+    .horas>#imagen24 {
         width: 50px;
         position: absolute;
         transform: translate(4px, -33px);
@@ -1309,7 +1356,7 @@
         border-right: 1px solid black;
     }
 
-    .tercercuadrante > #imagen25:hover {
+    .tercercuadrante>#imagen25:hover {
         transform: rotate(360deg);
         transition: transform 0.5s;
     }
@@ -1326,7 +1373,7 @@
         padding: 20px;
     }
 
-    .cuartocuadrante > p {
+    .cuartocuadrante>p {
         color: #0056ff;
         font-size: 44px;
         letter-spacing: 1px;
@@ -1369,7 +1416,7 @@
         margin-top: 10px;
     }
 
-    /* ELEMENTOS DE TOGGLE/INTERACCIÓN */
+    /* ELEMENTOS DE INTERACCIÓN */
     #imagen25 {
         width: 100px;
         margin-top: 30px;
@@ -1492,7 +1539,7 @@
         border-right: 1px solid black;
     }
 
-    .lugar > p {
+    .lugar>p {
         font-family: 'Mifuente';
         font-size: 28px;
         padding: 10px;
@@ -1531,7 +1578,9 @@
         padding: 20px;
     }
 
-    #p3, #p4 {
+    /* CONFIGURACIÓN DE LA FUENTE DE LOS TEXTOS */
+    #p3,
+    #p4 {
         font-family: 'Mifuente';
     }
 
@@ -1567,7 +1616,7 @@
         color: #333;
         font-size: 40px;
     }
-    
+
     .camara::before {
         position: absolute;
         bottom: 35px;
@@ -1583,188 +1632,191 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-/* /////////////////////////////////////////////////////////////////////// */
-/* SECCIÓN PRECIOS */
-/* ///////////////////////////////////////////////////////////////////// */
-/* SECCIÓN DE CONTACTOS */
-.contacto {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ffb2d1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.imagenesmatrimonio {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
+    /* /////////////////////////////////////////////////////////////////////// */
+    /* ///////////////////////////////////////////////////////////////////// */
+    /* SECCIÓN DE CONTACTOS */
+    /* CONFIGURACIÓN DE LA CUADRICULA PARA LA UBICACIÓN DEL CONTENIDO */
+    .contacto {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ffb2d1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-.segundapartecontacto{
-    width: 100%;
-    padding-top: 20%;
-}
+    /* CONFIGURACIÓN DE LOS DETALLES DE LAS IMAGENES */
+    .imagenesmatrimonio {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 
-#imagen33 {
-    width: 600px;
-    margin: 30px 0px 30px 0px;
-}
+    .segundapartecontacto {
+        width: 100%;
+        padding-top: 20%;
+    }
 
-#p11 {
-    font-family: 'Mifuente';
-    font-size: 80px;
-    color: blue;
-    padding: 10px 0px 20px 30px;
-    line-height: 0.9;
-    text-align: center;
-}
+    #imagen33 {
+        width: 600px;
+        margin: 30px 0px 30px 0px;
+    }
 
-#p21 {
-    font-size: 25px;
-    padding: 10px 0px 0px 30px;
-}
+    /* CONFIGURACIÓND DE LAS FUENTES DEL TEXTO */
+    #p11 {
+        font-family: 'Mifuente';
+        font-size: 80px;
+        color: blue;
+        padding: 10px 0px 20px 30px;
+        line-height: 0.9;
+        text-align: center;
+    }
 
-#p31 {
-    font-family: 'Mifuente';
-    font-size: 45px;
-    color: rgb(241, 54, 41);
-    padding: 10px 0px 0px 30px;
-    line-height: 0.9;
-}
+    #p21 {
+        font-size: 25px;
+        padding: 10px 0px 0px 30px;
+    }
 
-.fecha {
-    background-color: #ffb2d1;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
+    #p31 {
+        font-family: 'Mifuente';
+        font-size: 45px;
+        color: rgb(241, 54, 41);
+        padding: 10px 0px 0px 30px;
+        line-height: 0.9;
+    }
 
-.raya {
-    width: auto;
-    height: 10px;
-    margin-top: 20px;
-    background-color: rgb(241, 54, 41);
-    margin-left: 30px;
-    margin-right: 30px;
-}
+    .fecha {
+        background-color: #ffb2d1;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
-.circulorosado {
-    width: 55px;
-    height: 55px;
-    background-color: rgb(241, 54, 41);
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .raya {
+        width: auto;
+        height: 10px;
+        margin-top: 20px;
+        background-color: rgb(241, 54, 41);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 
-.cajafinal {
-    width: 100%;
-    height: auto;
-}
+    .circulorosado {
+        width: 55px;
+        height: 55px;
+        background-color: rgb(241, 54, 41);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.primeracajafinal {
-    width: 80%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 10%;
-    padding: 30px;
-    background-color: white;
-    box-shadow: -5px 0px 0px black;
-}
+    .cajafinal {
+        width: 100%;
+        height: auto;
+    }
 
-.primeracajafinal>p {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.8;
-}
+    .primeracajafinal {
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-left: 10%;
+        padding: 30px;
+        background-color: white;
+        box-shadow: -5px 0px 0px black;
+    }
 
-.segundacajafinal {
-    width: 80%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    border: 1px solid black;
-    margin-left: 10%;
-    background-color: white;
-    box-shadow: -5px 5px 0px black;
-}
+    .primeracajafinal>p {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.8;
+    }
 
-.telegram {
-    width: 55px;
-    height: 55px;
-    background-color: #ffeb3b;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 5px;
-}
+    .segundacajafinal {
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        border: 1px solid black;
+        margin-left: 10%;
+        background-color: white;
+        box-shadow: -5px 5px 0px black;
+    }
 
-.telegram>#imagen44 {
-    width: 30px;
-    height: 30px;
-}
+    /* CONFIGURACIÓN DE TAMAÑO, DISEÑO, COLOR Y CARACTERISTICAS FINALES */
+    .telegram {
+        width: 55px;
+        height: 55px;
+        background-color: #ffeb3b;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+    }
 
-.instagram {
-    width: 55px;
-    height: 55px;
-    background-color: #ffb2d1;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 5px;
-}
+    .telegram>#imagen44 {
+        width: 30px;
+        height: 30px;
+    }
 
-.instagram>#imagen45 {
-    width: 30px;
-    height: 30px;
-}
+    .instagram {
+        width: 55px;
+        height: 55px;
+        background-color: #ffb2d1;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+    }
 
-.facebook {
-    width: 55px;
-    height: 55px;
-    background-color: #a4f7f7;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 5px;
-    cursor: pointer;
-}
+    .instagram>#imagen45 {
+        width: 30px;
+        height: 30px;
+    }
 
-.facebook>#imagen46 {
-    width: 30px;
-    height: 30px;
-}
+    .facebook {
+        width: 55px;
+        height: 55px;
+        background-color: #a4f7f7;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 5px;
+        cursor: pointer;
+    }
 
-.segundacajafinal>p {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.8;
-    padding: 10px 0 10px 30px;
+    .facebook>#imagen46 {
+        width: 30px;
+        height: 30px;
+    }
 
-}
+    .segundacajafinal>p {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 10px 0 10px 30px;
 
-.segundacajafinal>div {
-    border-left: 1px solid black;
-}
+    }
 
+    .segundacajafinal>div {
+        border-left: 1px solid black;
+    }
 }
