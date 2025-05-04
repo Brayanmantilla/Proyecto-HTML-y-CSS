@@ -36,7 +36,7 @@
         position: relative;
     } 
     /* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
-    .imagen1>#imagen1{
+    #imagen1{
         width: 80vw;
         max-width: 300px;
         height: auto;
@@ -190,6 +190,24 @@
         left: 92%;
         top: 20%;
     }
+    #imagen50{
+        display: none;
+    }
+    #imagen51{
+        display: none;
+    }
+    #imagen52{
+        display: none;
+    }
+    #imagen53{
+        display: none;
+    }
+    #imagen54{
+        display: none;
+    }
+    .imagen55{
+        display: none;
+    }
     /* IMAGEN PRINCIPAL DE LA SECCIÓN NOSOTROS */
     .contenedorimagen {
         display: flex;
@@ -295,7 +313,7 @@
         border-style: solid;
     }
     /* SECCION DE PRECIOS */
-    .precios{
+    .precios1{
         width: 100%;
         height: auto;
         display: grid;
@@ -740,6 +758,10 @@
         border-left: 1px solid black;
     }
 }
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
+
 @media (min-width:768px){
     /* CONFIGURACION GLOBAL DE LA PAGINA */
     *{
@@ -752,7 +774,7 @@
         font-size: 40px;
         width: 100%;
         color: blue;
-        padding-top: 200px;
+        padding-top: 100px;
         align-content: center;
         text-align: center;
         position: absolute;
@@ -763,26 +785,11 @@
     .menuprincipal{
         background-color: #ffb2d1;
         width: 100%;
-        height: 600px;
+        height: 450px;
         border-bottom: 2px solid black;
         position: relative;
     } 
 /* AJUSTE DE LA IMAGEN DE INICIO (TAMAÑO, POSICION, FORMA, ETC) */
-    .imagen1>#imagen1{
-        width: 80vw;
-        max-width: 300px;
-        height: auto;
-        border-radius: 40%;
-        border-width: 2px;
-        border-style: solid;
-        border-color: black;
-        display: block;
-        position: absolute;
-        top: 50%;  
-        left: 50%;
-        transform: translate(-50%, 20%);
-        z-index: 1;
-    }
     .nosotros{
         background-color: rgb(250, 250, 113);
         width: 100%;
@@ -794,32 +801,33 @@
     #imagen2{
         position: absolute;
         width: 40px;
-        left: 3%;
+        left: 27%;
         top: 75%;
     }
     #imagen3{
         position: absolute;
         width: 20px;
-        left: 10%;
-        top: 50%; 
+        left: 23%;
+        top: 45%; 
     }
     #imagen4{
         position: absolute;
         width: 20px;
-        left: 87%;
-        top: 85%; 
+        left: 75%;
+        top: 80%; 
     }
     #imagen5{
         position: absolute;
         width: 60px;
-        left: 80%;
-        top: 72%; 
+        left: 75%;
+        top: 60%; 
+        z-index: 2;
     }
     #imagen8{
         position: absolute;
         width: 90px;
-        left:25%;
-        top: 118%;
+        left:80%;
+        top: 90%;
         z-index: 1;
     }
     #imagen9{
@@ -834,4 +842,214 @@
         left: 92%;
         top: 20%;
     }
-}
+    #imagen50{
+        position: absolute;
+        width: 150px;
+        left: 79%;
+        top: 30%;
+        border-radius: 20%;
+        border: 1px solid black;
+    }
+    #imagen51{
+        position: absolute;
+        width: 200px;
+        left: 3%;
+        top: 70%;
+        border-radius: 20%;
+        border: 1px solid black;
+        z-index: 2;
+    }
+    .imagen1matrimonio{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    #imagen1{
+        width: 80vw;
+        max-width: 300px;
+        height: auto;
+        border-radius: 40%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        position: relative;
+        top: 30%;  
+        left: 50%;
+        transform: translate(-50%, 20%);
+        z-index: 1;
+    }
+    #imagen52{
+        position: absolute;
+        width: 70px;
+        left: 36.5vw;
+        top: 65vh;
+        z-index: 10;
+    }
+    /* MENU SUPERIOR CON OPCIONES */
+    .opcionesmenu {
+        background-color: #ffb2d1;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+        font-weight: bold;
+        position: fixed;
+        width: 100vw; /* usa 100% del viewport sin excederse */
+        top: 0;
+        z-index: 100;
+        box-sizing: border-box; /* que padding no sume al ancho */
+    }
+    .opcionesmenu a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    /* SECCIÓN NOSOTROS */
+    .amigos2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas: "imagen texto";
+    }
+    .contenedorimagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* 100% del alto de la ventana */
+        padding-top: 250px;
+        grid-area: texto;
+    }
+    .contenedorimagen img {
+        width: 200px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    /* TEXTO DE LA SECCIÓN NOSOTROS */
+    .textomatrimonio{
+        width: 230px;
+        height: auto;
+        margin-top: 20px;
+        font-family: 'Mifuente2', sans-serif;
+        font-size: 13px;
+    }
+    /* CONFIGURACIÓN DE EL TEXTO JUNTO CON LAS DOS IMAGENES */
+    .textoimagen{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 0px;
+    }
+    .textomatrimonio2{
+        width: auto;
+        margin-top: 20px;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Mifuente';
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    #imagen12{
+        width: 50px;
+        top:50px;
+    }
+    #imagen13{
+        width: 50px;
+    }
+    /* CONFIGURACIÓN Y UBICACIÓN DE LA FOTO DE AMIGOS DE LA SECCIÓN NOSOTROS */
+    .fotoamigos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 250px;
+        padding: 0px;
+        margin-left: 80px;
+        grid-area: imagen;
+    }
+    #imagen14{
+        width: 230px;
+        height: 300px;
+        border-width: 7px;
+        border-color: white;
+        border-style:solid;
+        transform: rotate(-5deg);
+        z-index: 3;
+    }
+    .cuadro1{
+        width: 230px;
+        height: 300px;
+        background-color: #ffb2d1;
+        border-width: 1px;
+        border-color: black;
+        border-style:solid;
+        transform: rotate(-5deg)  translate(-10px, 10px);
+        position: absolute;
+        z-index: 2;
+    }
+    .cuadro2{
+        width: 230px;
+        height: 300px;
+        background-color: #ffb2d1;
+        border-width: 1px;
+        border-color: black;
+        border-style:solid;
+        transform: rotate(-5deg)  translate(-20px, 20px);
+        position: absolute;
+        z-index: 1;
+    }
+    #imagen53{
+        position: absolute;
+        width: 30px;
+        left: 2%;
+        top: 93%;
+    }
+    #imagen54{
+        position: absolute;
+        width: 30px;
+        left: 92%;
+        top: 93%;
+    }
+    /* SECCIÓN GALERIA */
+    /* SECCIÓN GALERÍA */
+    /* ARREGLO DE LA PANTALLA PARA MOSTRAR LAS IMAGENES */
+    .galeria{
+        background: linear-gradient(to top, #ec4d4d,#ffffff);
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns:  1fr  1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 30px;
+    }
+    /* CONFIGURACIÓN DE LAS IMAGENES */
+    .galeria>img{
+        width: 250px;
+        height: auto;
+        border-radius: 10%;
+        border-color: black;
+        border: 2px;
+        border-style: solid;
+    }
+
+    @keyframes mover-lados {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(10px); }
+        100% { transform: translateX(0); }
+    }
+    .galeria img {
+        animation: mover-lados 3s ease-in-out infinite;
+    }
+
+
+
+
+
+
+
+
+
+
