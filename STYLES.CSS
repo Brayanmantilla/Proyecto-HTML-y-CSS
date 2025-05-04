@@ -29,7 +29,7 @@
         transition: transform 0.3s ease;
         margin-right: 20px;
     }
-    
+
     .chat-button .btn {
         width: 120px;
         height: 120px;
@@ -46,16 +46,17 @@
         justify-content: center;
         transition: all 0.3s ease;
     }
-    
+
     /* Efecto hover */
     .chat-button:hover {
         transform: translateY(-5px);
     }
-    
+
     .chat-button .btn:hover {
         background: rgb(235, 154, 50);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     }
+
     /* TITULO DE LA PAGINA DE INICIO */
     .menuprincipal>.titulo1 {
         font-family: 'MiFuente', sans-serif;
@@ -194,6 +195,7 @@
         font-size: 26px;
         margin-right: 10px;
     }
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN NOSOTROS */
@@ -379,6 +381,7 @@
         position: absolute;
         z-index: 1;
     }
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN GALERÍA */
@@ -421,6 +424,7 @@
     .galeria img {
         animation: mover-lados 2s ease-in-out infinite;
     }
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCION DE PRECIOS */
@@ -760,6 +764,7 @@
         width: 150px;
         position: absolute;
     }
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN DE CONTACTOS */
@@ -967,7 +972,7 @@
         transition: transform 0.3s ease;
         margin-right: 20px;
     }
-    
+
     .chat-button .btn {
         width: 120px;
         height: 120px;
@@ -984,12 +989,12 @@
         justify-content: center;
         transition: all 0.3s ease;
     }
-    
+
     /* Efecto hover */
     .chat-button:hover {
         transform: translateY(-5px);
     }
-    
+
     .chat-button .btn:hover {
         background: rgb(235, 154, 50);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
@@ -1150,7 +1155,7 @@
         align-items: center;
         gap: 5px;
     }
-    
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN NOSOTROS */
@@ -1274,6 +1279,7 @@
         left: 95%;
         top: 93%;
     }
+
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ */
     /* SECCIÓN GALERÍA */
